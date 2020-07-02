@@ -5,30 +5,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
 
   <body>
     <div id="calculator-container">
-        <div id='display'>fillerdisplay</div>
-        <button id='k7' class="operator">7</button>
-        <button id='k8' class="operator">8</button>
-        <button id='k9' class="operator">9</button>
-        <button id='kDi' class="operator">/</button>
-        <button id='k4' class="operator">4</button>
-        <button id='k5' class="operator">5</button>
-        <button id='k6' class="operator">6</button>
-        <button id='kM' class="operator">*</button>
-        <button id='k1' class="operator">1</button>
-        <button id='k2' class="operator">2</button>
-        <button id='k3' class="operator">3</button>
-        <button id='kS' class="operator">-</button>
-        <button id='kDe' class="operator">.</button>
-        <button id='k0' class="operator">0</button>
-        <button id='kE' class="operator">=</button>
-        <button id='kA' class="operator">+</button>
+        <div id='display'>
+          <p id='display-nums'>1+2+4</p>
+        </div>
+        <button id='k7' class="key" data-value='7'>7</button>
+        <button id='k8' class="key" data-value='8'>8</button>
+        <button id='k9' class="key" data-value='9'>9</button>
+        <button id='kDi' class="key" data-action='divide'>/</button>
+        <button id='k4' class="key" data-value='4'>4</button>
+        <button id='k5' class="key" data-value='5'>5</button>
+        <button id='k6' class="key" data-value='6'>6</button>
+        <button id='kM' class="key" data-action='multiply'>*</button>
+        <button id='k1' class="key" data-value='1'>1</button>
+        <button id='k2' class="key" data-value='2'>2</button>
+        <button id='k3' class="key" data-value='3'>3</button>
+        <button id='kS' class="key" data-action='subtract'>-</button>
+        <button id='kDe' class="key" data-value='.'>.</button>
+        <button id='k0' class="key" data-value='0'>0</button>
+        <button id='kE' class="key" data-action='equals'>=</button>
+        <button id='kA' class="key" data-action='add'>+</button>
+        <button id='kC' class="key" data-action='clear'>Clear</button>
       </div>
     </div>
-    <script src="/scripts/javascript.js"></script>
+    <script src="/scripts/index.js"></script>
   </body>
 </html>
