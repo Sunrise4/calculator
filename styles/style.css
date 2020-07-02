@@ -1,0 +1,55 @@
+#calculator-container {
+  height: 480px;
+  width: 550px;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#display {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.operator {
+  /* border: solid 3px black; */
+  background-image: linear-gradient(rgb(211, 211, 211), rgb(185, 185, 185));
+  background-size: 100%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0px 0px,
+    rgba(0, 0, 0, 0.3) 0px 0px 0px 1px,
+    rgba(255, 255, 255, 0.05) 0px 1px 0px 0px,
+    rgba(255, 255, 255, 0.2) 0px 0px 3px 0px;
+  color: rgb(59, 59, 59);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 60px;
+  letter-spacing: 1.32px;
+  line-height: 36.3px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  position: relative;
+  text-align: center;
+  text-decoration: rgb(174, 174, 174);
+  text-decoration-color: rgb(174, 174, 174);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  /* text-shadow: rgba(0, 0, 0, 0.4) 0px -1px 0px; */
+  width: 115.5px;
+  z-index: 10;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
