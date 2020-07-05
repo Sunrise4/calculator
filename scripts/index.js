@@ -17,6 +17,7 @@ function divide(num1, num2) {
 function operate(operator, num1, num2) {
   return operator(num1, num2);
 }
+let equation = [];
 let dec = 0;
 let text = '';
 const displayText = document.getElementById('display-nums');
@@ -34,6 +35,7 @@ keys.forEach((key) => {
     key.addEventListener('click', () => {
       text = document.createTextNode(` ${key.textContent} `);
       displayText.appendChild(text);
+      equation.append(key.getAttribute('data-op'));
       dec = 0;
     });
   }
